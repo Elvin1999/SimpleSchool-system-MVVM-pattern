@@ -7,6 +7,54 @@
         mc:Ignorable="d"
         Title="TeacherWindow" Height="450" Width="800">
     <Grid>
+
+        <ListView ItemsSource="{Binding AllTeacher}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Id" Width="100">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Padding="5,0" Text="{Binding Id}" ></TextBlock>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+
+                    <GridViewColumn Header="Name" Width="200">
+
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Padding="5,0" Text="{Binding Name}" ></TextBlock>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+
+                    </GridViewColumn>
+
+                    <GridViewColumn Header="Surname" Width="200">
+
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Padding="5,0" Text="{Binding Surname}" ></TextBlock>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+
+                    </GridViewColumn>
+
+                    <GridViewColumn Header="Age" Width="50">
+
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Padding="5,0" Text="{Binding Age}" ></TextBlock>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+
+                    </GridViewColumn>
+
+                </GridView>
+            </ListView.View>
+            
+        </ListView>
+        
+        
         
     </Grid>
 </Window>

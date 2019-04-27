@@ -64,7 +64,34 @@ namespace SchoolSystem
 
         private void Showteacher_Click(object sender, RoutedEventArgs e)
         {
-
+            List<Teacher> Teachers = new List<Teacher>()
+            {
+                    new Teacher()
+                    {
+                        Id=Guid.NewGuid(),
+                        Name="Anar",
+                        Surname="Ehmedov",
+                        Age=20
+                    },
+                     new Teacher()
+                    {
+                        Id=Guid.NewGuid(),
+                        Name="Anar",
+                        Surname="Ehmedov",
+                        Age=20
+                    },
+                      new Teacher()
+                    {
+                        Id=Guid.NewGuid(),
+                        Name="Anar",
+                        Surname="Ehmedov",
+                        Age=20
+                    },
+                };
+            TeacherViewModel teacherViewModel = new TeacherViewModel();
+            teacherViewModel.AllTeacher = Teachers;
+            TeacherWindow teacherWindow = new TeacherWindow(teacherViewModel);
+            teacherWindow.ShowDialog();
         }
     }
 }

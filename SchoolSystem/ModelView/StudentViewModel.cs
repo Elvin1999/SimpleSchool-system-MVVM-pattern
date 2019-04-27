@@ -11,7 +11,6 @@ namespace SchoolSystem.ModelView
    public class StudentViewModel : BaseViewModel
     {
         private List<Student> allstudent;
-
         public List<Student> AllStudent
         {
             get { return allstudent; }
@@ -23,3 +22,8 @@ namespace SchoolSystem.ModelView
         }
     }
 }
+
+
+
+
+
