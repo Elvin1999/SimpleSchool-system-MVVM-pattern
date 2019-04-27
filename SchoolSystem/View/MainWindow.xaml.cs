@@ -23,15 +23,16 @@ namespace SchoolSystem
     /// </summary>
     public partial class MainWindow : Window
     {
+        MainWindowViewModel MainVM { get; set; }
         public MainWindow()
         {
             InitializeComponent();
+
+            MainVM = new MainWindowViewModel();
+
+            DataContext = MainVM;
         }
-        private void ShowStudent_Click(object sender, RoutedEventArgs e)
-        {
-           
-          
-        }
+
 
         private void Showteacher_Click(object sender, RoutedEventArgs e)
         {

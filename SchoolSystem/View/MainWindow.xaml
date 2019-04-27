@@ -20,7 +20,7 @@
             </Label.FontFamily>
         </Label>
         <StackPanel Margin="100">
-            <Button Margin="20" Name="ShowStudent" Click="ShowStudent_Click">
+            <Button Margin="20" Name="ShowStudent" Command="{Binding ShowStudents}">
                 <Button.Content>Show Students</Button.Content>
                 <Button.Width>200</Button.Width>
                 <Button.Height>50</Button.Height>

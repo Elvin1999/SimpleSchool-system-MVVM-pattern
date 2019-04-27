@@ -10,7 +10,7 @@ using System.Windows.Input;
 
 namespace SchoolSystem.Commands
 {
-    class ShowStudentsCommand : ICommand
+    public class ShowStudentsCommand : ICommand
     {
         //StudentViewModel StudentVM { get; set; }
         //public ShowStudentsCommand(StudentViewModel StudentVM)

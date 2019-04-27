@@ -10,6 +10,7 @@ namespace SchoolSystem.ModelView
 {
    public class StudentViewModel : BaseViewModel
     {
+
         public Student CurrentStudent { get; set; }
 
         private List<Student> allstudent;
