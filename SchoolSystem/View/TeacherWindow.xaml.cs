@@ -25,6 +25,7 @@ namespace SchoolSystem.View
         {
             InitializeComponent();
             this.TeacherVM = TeacherVM;
+            DataContext = TeacherVM;
         }
     }
 }

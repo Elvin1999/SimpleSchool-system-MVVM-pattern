@@ -10,6 +10,8 @@ namespace SchoolSystem.ModelView
 {
    public class StudentViewModel : BaseViewModel
     {
+        public Student CurrentStudent { get; set; }
+
         private List<Student> allstudent;
         public List<Student> AllStudent
         {
@@ -17,7 +19,7 @@ namespace SchoolSystem.ModelView
             set
             {
                 allstudent = value;
-                OnPropertyChanged(new PropertyChangedEventArgs("AllStudents"));
+                OnPropertyChanged(new PropertyChangedEventArgs("AllStudent"));
             }
         }
     }
