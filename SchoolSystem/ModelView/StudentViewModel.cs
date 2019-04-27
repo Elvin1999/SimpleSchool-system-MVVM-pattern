@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SchoolSystem.ModelView
 {
-    class StudentViewModel : BaseViewModel
+   public class StudentViewModel : BaseViewModel
     {
         private List<Student> allstudent;
 

@@ -1,4 +1,6 @@
 ﻿using SchoolSystem.Entities;
+using SchoolSystem.ModelView;
+using SchoolSystem.View;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,15 +32,34 @@ namespace SchoolSystem
         {
             List<Student> Students = new List<Student>()
             {
-                {
                     new Student()
                     {
                         Id=Guid.NewGuid(),
                         Name="Anar",
+                        Surname="Ehmedov",
+                        Age=20
+                    },
+                     new Student()
+                    {
+                        Id=Guid.NewGuid(),
+                        Name="Anar",
+                        Surname="Ehmedov",
+                        Age=20
+                    },
+                      new Student()
+                    {
+                        Id=Guid.NewGuid(),
+                        Name="Anar",
+                        Surname="Ehmedov",
+                        Age=20
+                    },
 
-                    }
-                }
-            }
+                };
+            StudentViewModel studentViewModel = new StudentViewModel();
+            studentViewModel.AllStudent = Students;
+            StudentWindow studentWindow = new StudentWindow(studentViewModel);
+            studentWindow.ShowDialog();
+            
         }
 
         private void Showteacher_Click(object sender, RoutedEventArgs e)

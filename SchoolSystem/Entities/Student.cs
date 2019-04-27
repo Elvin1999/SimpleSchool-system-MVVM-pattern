@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SchoolSystem.Entities
 {
-    class Student
+   public class Student
     {
         public Guid Id { get; set; }
         public string  Name { get; set; }

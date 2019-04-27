@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace SchoolSystem.ModelView
 {
-   public class TeacherViewModel:BaseViewModel
+    class MainWindowViewModel:BaseViewModel
     {
+
     }
 }

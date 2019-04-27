@@ -55,6 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ModelView\MainWindowViewModel.cs" />
     <Compile Include="ModelView\StudentViewModel.cs" />
     <Compile Include="ModelView\TeacherViewModel.cs" />
     <Compile Include="View\StudentWindow.xaml.cs">

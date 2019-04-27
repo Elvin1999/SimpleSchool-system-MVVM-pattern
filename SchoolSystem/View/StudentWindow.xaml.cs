@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SchoolSystem.ModelView;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +20,13 @@ namespace SchoolSystem.View
     /// </summary>
     public partial class StudentWindow : Window
     {
-        public StudentWindow()
+        public StudentViewModel StudentVM { get; set; }
+
+        public StudentWindow(StudentViewModel StudentVM)
         {
             InitializeComponent();
+            this.StudentVM = StudentVM;
+            DataContext = StudentVM;
         }
     }
 }
